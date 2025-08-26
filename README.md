@@ -1,59 +1,46 @@
-# RedmineTrelloView
+# Flextotal - Gestão de Projetos Moderna
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+Flextotal é uma plataforma de gestão de projetos moderna e poderosa, inspirada nas funcionalidades robustas do Redmine, mas com uma interface de usuário contemporânea e intuitiva. Construída com as tecnologias mais recentes, a aplicação visa otimizar o fluxo de trabalho de equipes de desenvolvimento, QA, suporte e gestão.
 
-## Development server
+## ✨ Principais Funcionalidades
 
-To start a local development server, run:
+- **Dashboard de Controle:** Visualize métricas e o progresso dos projetos através de gráficos interativos (barras, pizza, linhas).
+- **Quadro Kanban:** Gerencie o fluxo de trabalho das tarefas com um quadro Kanban visual e fácil de usar.
+- **Cronograma (Gantt):** Planeje e acompanhe a linha do tempo do projeto com uma visualização de Gráfico de Gantt.
+- **Gestão de Tarefas Completa:** Crie, edite e gerencie tarefas com detalhes como prioridade, status, responsável, anexos e comentários.
+- **Checklist de Subtarefas:** Quebre tarefas complexas em subtarefas gerenciáveis dentro de um mini-kanban.
+- **Chat QA/Dev Flutuante:** Facilite a comunicação rápida entre QA e Desenvolvedores diretamente na tarefa, evitando reaberturas desnecessárias.
+- **Apontador de Horas:** Registre o tempo trabalhado em cada tarefa com um cronômetro integrado.
+- **Páginas por Equipe:** Seções dedicadas para as equipes de QA e Tech Leads, com ferramentas e filtros específicos para suas necessidades.
+- **Gerenciamento de Projetos e Wikis:** Organize projetos para diferentes clientes, cada um com sua própria Wiki e área de documentos, além de uma Wiki interna global.
+- **Inteligência Artificial:** Utilize IA para gerar resumos de tarefas adaptados para públicos distintos (gerencial e técnico).
 
-```bash
-ng serve
-```
+## 🚀 Tecnologias Utilizadas
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Framework:** [Angular](https://angular.dev/) (v18+)
+- **Linguagem:** [TypeScript](https://www.typescriptlang.org/)
+- **Estilização:** [Tailwind CSS](https://tailwindcss.com/)
+- **Componentes UI:** Componentes customizados (standalone) inspirados em [ShadCN UI](https://ui.shadcn.com/)
+- **IA Generativa:** [Genkit (Google AI)](https://firebase.google.com/docs/genkit) (integrado via API)
+- **Gráficos:** [NGX-Charts](https://swimlane.github.io/ngx-charts/)
 
-## Code scaffolding
+## ⚙️ Como Executar o Projeto Localmente
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1.  **Instalar o Angular CLI (se ainda não tiver):**
+    ```bash
+    npm install -g @angular/cli
+    ```
 
-```bash
-ng generate component component-name
-```
+2.  **Instalar as dependências do projeto:**
+    ```bash
+    npm install
+    ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+3.  **Configurar Variáveis de Ambiente:**
+    No Angular, as variáveis de ambiente são gerenciadas nos arquivos `src/environments/`. Copie o conteúdo de `environment.ts` para `environment.local.ts` (ou edite diretamente) e preencha as variáveis necessárias, como a URL da API ou a chave do Genkit.
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+4.  **Executar o servidor de desenvolvimento:**
+    ```bash
+    ng serve
+    ```
+    Abra [http://localhost:4200](http://localhost:4200) no seu navegador para ver a aplicação.
