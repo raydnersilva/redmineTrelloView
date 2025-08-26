@@ -1,1 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'tailwindcss/base';
+@use 'tailwindcss/components';
+@use 'tailwindcss/utilities';
+
+@layer base {
+  :root {
+    --background: 220 33% 97%; /* Light blue-gray */
+    --foreground: 224 76% 28%; /* Dark Blue */
+    --card: 0 0% 100%;
+    --card-foreground: 224 76% 28%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 76% 28%;
+    --primary: 225 73% 47%; /* Main Blue */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 33% 93%;
+    --secondary-foreground: 224 76% 28%;
+    --muted: 220 33% 93%;
+    --muted-foreground: 225 31% 61%;
+    --accent: 45 93% 47%; /* Gold/Yellow */
+    --accent-foreground: 224 76% 28%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 33% 89%;
+    --input: 220 33% 89%;
+    --ring: 225 73% 47%;
+    --chart-1: 225 73% 47%;
+    --chart-2: 45 93% 47%;
+    --chart-3: 210 70% 50%;
+    --chart-4: 30 80% 55%;
+    --chart-5: 173 58% 39%;
+    --radius: 0.5rem;
+    --sidebar-background: 226 71% 15%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 45 93% 47%;
+    --sidebar-primary-foreground: 226 71% 15%;
+    --sidebar-accent: 226 71% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 226 71% 25%;
+    --sidebar-ring: 45 93% 47%;
+  }
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 222.2 84% 4.9%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 210 40% 98%;
+    --sidebar-primary-foreground: 222.2 47.4% 11.2%;
+    --sidebar-accent: 217.2 32.6% 17.5%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217.2 32.6% 17.5%;
+    --sidebar-ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}

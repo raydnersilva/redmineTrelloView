@@ -1,0 +1,38 @@
+<div class="flex min-h-screen items-center justify-center p-4 bg-background">
+  <app-card customClass="mx-auto max-w-sm w-full shadow-2xl">
+    <app-card-header class="text-center">
+      <div class="flex justify-center items-center gap-2 mb-4">
+        <div class="p-3 rounded-lg bg-primary">
+          <svg class="h-7 w-7 text-primary-foreground" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor">
+            <path
+              d="M50 0L8.68 25v50L50 100l41.32-25V25L50 0zm0 8.82L83.3 29.41v41.18L50 91.18 16.7 70.59V29.41L50 8.82zM33.8 70.39c-2.73-1.58-4.9-3.79-6.5-6.64-1.6-2.85-2.4-6.1-2.4-9.75 0-3.66.8-6.9 2.4-9.75 1.6-2.85 3.78-5.06-6.5 6.64L50 29.8l16.2 9.35c2.73 1.58 4.9 3.79 6.5 6.64 1.6 2.85 2.4 6.1 2.4 9.75 0 3.66-.8 6.9-2.4 9.75-1.6 2.85-3.78-5.06-6.5 6.64L50 80.2 33.8 70.39z" />
+          </svg>
+        </div>
+        <app-card-title class="text-3xl font-bold">Flextotal</app-card-title>
+      </div>
+      <app-card-description>
+        Digite suas credenciais para acessar seus projetos
+      </app-card-description>
+    </app-card-header>
+    <app-card-content>
+      <form class="grid gap-4" (ngSubmit)="login()">
+        <div class="grid gap-2">
+          <app-label for="email">Usuário ou Email</app-label>
+          <app-input id="email" type="email" placeholder="usuario@exemplo.com" [(ngModel)]="email" name="email"
+            required></app-input>
+        </div>
+        <div class="grid gap-2">
+          <div class="flex items-center">
+            <app-label for="password">Senha</app-label>
+            <a routerLink="#" class="ml-auto inline-block text-sm underline">
+              Esqueceu sua senha?
+            </a>
+          </div>
+          <app-input id="password" type="password" [(ngModel)]="password" name="password" required></app-input>
+        </div>
+        <a appButton routerLink="/dashboard" class="w-full text-center">Entrar</a>
+      </form>
+    </app-card-content>
+  </app-card>
+</div>
